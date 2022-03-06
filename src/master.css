@@ -1,0 +1,138 @@
+*{
+    font-family: Poppins;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color:black;
+    background-color: #dcdcdc;;
+}
+
+.nave{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h3{
+    padding: 10px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.logo:hover h3{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo img:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu .list {
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .list a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.5s;
+
+}
+.menu .list img{
+    position: absolute;
+    width: 40px;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu .list:hover a{
+    opacity: 1;
+    transform: translateY(30px);
+    transition: 0.5s;
+
+}
+
+.menu .list:hover img{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.main-content{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
+
+.main-content .main-text{
+    padding: 80px;
+    max-width: 50%;
+    text-align: justify;
+    align-items: center;
+}
+
+.main-content .main-img{
+    width: 100%;
+    padding: 40px;
+}
+
+.main-content .main-img img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.2);
+    animation: move-vector 5s linear infinite;
+}
+
+.footer .back{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding:30px;
+}
+
+.footer .back img{
+    width: 50px;
+}
+
+@keyframes move-vector {
+    0%{
+        transform: translateY(5px);
+    }50%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(5px);
+    }
+}
