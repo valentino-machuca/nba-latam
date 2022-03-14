@@ -1,0 +1,53 @@
+.main{
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats{
+  display: flex;
+  justify-content: center;
+  background-color: #bab2b2;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+.stats .backg img{
+  display: flex;
+  justify-content: center;
+  opacity: 0.3;
+  position: absolute;
+  width: 500px;
+}
+.stats .display{
+    position: relative;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+.stats .display .percentages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stats .display .percentages img{
+    width: 300px;
+}
+.stats .display .percentages table th, td{
+    padding: 5px;
+}
+.stats .info{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.stats .info table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.stats .info table th{
+    padding: 5px;
+}
